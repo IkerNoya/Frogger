@@ -4,20 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
-    void ClickOnGame()
+    public void ClickOnGame()
     {
         SceneManager.LoadScene("Game");
     }
-    void ClickOnCredits()
+    public void ClickOnCredits()
     {
         SceneManager.LoadScene("Credits");
     }
-    void ClickOnMenu()
+    public void ClickOnMenu()
     {
         SceneManager.LoadScene("Menu");
     }
-    void ClickOnControl()
+    public void ClickOnControl()
     {
         SceneManager.LoadScene("Controls");
+    }
+    public void ClickOnQuit()
+    {
+        Application.Quit();
     }
 }
