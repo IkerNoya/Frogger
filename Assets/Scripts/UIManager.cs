@@ -1,18 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void ClickOnGame()
     {
-        
+        SceneManager.LoadScene("Game");
     }
-
-    // Update is called once per frame
-    void Update()
+    void ClickOnCredits()
     {
-        
+        SceneManager.LoadScene("Credits");
+    }
+    void ClickOnMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+    void ClickOnControl()
+    {
+        SceneManager.LoadScene("Controls");
     }
 }
