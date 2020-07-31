@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 789258298}
-  offset: -3
+  offset: -4
   speed: 5
 --- !u!1001 &1299536477
 PrefabInstance:
