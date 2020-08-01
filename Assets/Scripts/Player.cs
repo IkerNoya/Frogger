@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.tag == "Victory")
+        if (collision.gameObject.CompareTag("Victory"))
         {
             victory();
         }
