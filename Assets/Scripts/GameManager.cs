@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
     }
     public void Restart()
     {
-        player.Respawn();
+        player.Restart();
         SetVictory();
         player.SetIsPaused(false);
     }
