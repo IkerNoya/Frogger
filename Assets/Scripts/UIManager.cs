@@ -33,4 +33,8 @@ public class UIManager : MonoBehaviour
     {
         manager.Restart();
     }
+    public void ClickOnResume()
+    {
+        manager.SetPause();
+    }
 }

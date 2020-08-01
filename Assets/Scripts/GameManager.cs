@@ -44,10 +44,12 @@ public class GameManager : MonoBehaviour
         if (PauseScreen.activeSelf)
         {
             PauseScreen.SetActive(false);
+            player.SetIsPaused(false);
         }
         else
         {
             PauseScreen.SetActive(true);
+            player.SetIsPaused(true);
         }
     }
 
@@ -56,10 +58,12 @@ public class GameManager : MonoBehaviour
         if (VictoryScreen.activeSelf)
         {
             VictoryScreen.SetActive(false);
+            player.SetIsPaused(false);
         }
         else
         {
             VictoryScreen.SetActive(true);
+            player.SetIsPaused(true);
         }
     }
     public void Restart()

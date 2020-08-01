@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public delegate void Victory();
     public static event Victory victory;
     bool isPaused = false;
+    float distance;
 
     Vector3 InitialPos;
     void Start()
@@ -29,7 +30,7 @@ public class Player : MonoBehaviour
     {
         if (isPaused)
             return;
-        float distance = Vector3.Distance(transform.position, point.position);
+        distance = Vector3.Distance(transform.position, point.position);
         //testeo de movimiento
         if (Input.GetKeyDown(KeyCode.D) && distance < minDistance)
         {
@@ -46,6 +47,10 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S) && distance < minDistance)
         {
             point.position += Vector3.back;
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pause();
         }
         if (transform.position != point.position)
         {
@@ -71,7 +76,6 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Victory"))
         {
             victory();
-            isPaused = true;
         }
     }
 }
