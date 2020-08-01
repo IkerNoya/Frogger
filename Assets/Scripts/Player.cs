@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.Timeline;
 using UnityEngine;
 
@@ -10,7 +11,10 @@ public class Player : MonoBehaviour
     public Transform point;
     float Ypos;
     float minDistance = 0.01f;
-
+    public delegate void Pause();
+    public static event Pause pause;
+    public delegate void Victory();
+    public static event Victory victory;
     void Start()
     {
         Ypos = transform.position.y;
@@ -39,5 +43,12 @@ public class Player : MonoBehaviour
         }
         if (transform.position != point.position)
             transform.position = Vector3.Lerp(transform.position, point.position, Time.deltaTime * speed);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.tag == "Victory")
+        {
+            victory();
+        }
     }
 }
