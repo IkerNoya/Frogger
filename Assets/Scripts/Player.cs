@@ -7,22 +7,28 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed;
+    [SerializeField] float speed;
+
     public Transform point;
-    float Ypos;
     float minDistance = 0.01f;
+    float lives = 3;
+    float maxLives = 3;
+
     public delegate void Pause();
     public static event Pause pause;
     public delegate void Victory();
     public static event Victory victory;
+    bool isPaused = false;
+
+    Vector3 InitialPos;
     void Start()
     {
-        Ypos = transform.position.y;
+        InitialPos = transform.position;
     }
-
-
     void Update()
     {
+        if (isPaused)
+            return;
         float distance = Vector3.Distance(transform.position, point.position);
         //testeo de movimiento
         if (Input.GetKeyDown(KeyCode.D) && distance < minDistance)
@@ -42,13 +48,30 @@ public class Player : MonoBehaviour
             point.position += Vector3.back;
         }
         if (transform.position != point.position)
+        {
             transform.position = Vector3.Lerp(transform.position, point.position, Time.deltaTime * speed);
+        }
+    }
+    public void Respawn()
+    {
+        transform.position = InitialPos;
+        point.position = InitialPos;
+        lives = maxLives;
+    }
+    public void SetIsPaused(bool choice)
+    {
+        isPaused = choice;
+    }
+    public bool GetIsPaused()
+    {
+        return isPaused;
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Victory"))
         {
             victory();
+            isPaused = true;
         }
     }
 }

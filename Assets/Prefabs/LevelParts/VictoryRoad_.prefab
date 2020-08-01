@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 753293003562476106}
   - component: {fileID: 1338328650531674992}
   - component: {fileID: 7551351503057257321}
+  - component: {fileID: 1785610911}
   m_Layer: 8
   m_Name: Grid_9
   m_TagString: Victory
@@ -88,11 +89,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242503393668893904}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1785610911
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242503393668893904}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &339543456617499770
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,6 +122,7 @@ GameObject:
   - component: {fileID: 5020505827803424326}
   - component: {fileID: 2407383316961640336}
   - component: {fileID: 5693270353667733102}
+  - component: {fileID: 339103902}
   m_Layer: 8
   m_Name: Grid_15
   m_TagString: Victory
@@ -181,11 +199,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339543456617499770}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &339103902
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339543456617499770}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2166336317115078235
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,6 +232,7 @@ GameObject:
   - component: {fileID: 9039107339605694374}
   - component: {fileID: 1088667554334056238}
   - component: {fileID: 5554264204800319640}
+  - component: {fileID: 1524321203}
   m_Layer: 8
   m_Name: Grid_2
   m_TagString: Victory
@@ -274,11 +309,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2166336317115078235}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1524321203
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2166336317115078235}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2577109695994171067
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,6 +342,7 @@ GameObject:
   - component: {fileID: 9185144917816228359}
   - component: {fileID: 7847189543746680531}
   - component: {fileID: 4219128222776275121}
+  - component: {fileID: 61574478}
   m_Layer: 8
   m_Name: Grid_7
   m_TagString: Victory
@@ -367,11 +419,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2577109695994171067}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &61574478
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577109695994171067}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2748608735066643934
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +452,7 @@ GameObject:
   - component: {fileID: 8205030989837141848}
   - component: {fileID: 3858938250114756931}
   - component: {fileID: 4935416823509708357}
+  - component: {fileID: 555531500}
   m_Layer: 8
   m_Name: Grid_12
   m_TagString: Victory
@@ -460,11 +529,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2748608735066643934}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &555531500
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2748608735066643934}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2966705006941699358
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +562,7 @@ GameObject:
   - component: {fileID: 5122608730408857896}
   - component: {fileID: 5876987653440721433}
   - component: {fileID: 4247719355391447070}
+  - component: {fileID: 2047573715}
   m_Layer: 8
   m_Name: Grid_5
   m_TagString: Victory
@@ -553,11 +639,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2966705006941699358}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2047573715
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2966705006941699358}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3357837809036400007
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +672,7 @@ GameObject:
   - component: {fileID: 8685642731342540182}
   - component: {fileID: 7783292839411888713}
   - component: {fileID: 7201689431216722866}
+  - component: {fileID: 1277811883}
   m_Layer: 8
   m_Name: Grid_14
   m_TagString: Victory
@@ -646,11 +749,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3357837809036400007}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1277811883
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3357837809036400007}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3617677095054551853
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +782,7 @@ GameObject:
   - component: {fileID: 324781622254657138}
   - component: {fileID: 3560639536244549133}
   - component: {fileID: 6747243609816458494}
+  - component: {fileID: 1430183162}
   m_Layer: 8
   m_Name: Grid_10
   m_TagString: Victory
@@ -739,11 +859,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3617677095054551853}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1430183162
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3617677095054551853}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3648880078681149672
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +892,7 @@ GameObject:
   - component: {fileID: 6715617453574125766}
   - component: {fileID: 6516071769074625234}
   - component: {fileID: 174903424066361689}
+  - component: {fileID: 648184218}
   m_Layer: 8
   m_Name: Grid_11
   m_TagString: Victory
@@ -832,11 +969,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3648880078681149672}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &648184218
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648880078681149672}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3738633472394537765
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,6 +1002,7 @@ GameObject:
   - component: {fileID: 5032984636059132135}
   - component: {fileID: 1982760151570649666}
   - component: {fileID: 1303325372131689246}
+  - component: {fileID: 1538409130}
   m_Layer: 8
   m_Name: Grid_13
   m_TagString: Victory
@@ -925,11 +1079,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3738633472394537765}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1538409130
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3738633472394537765}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4613902497260791711
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,7 +1109,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 90487089510024450}
-  - component: {fileID: 5424436897833163662}
   m_Layer: 0
   m_Name: VictoryRoad
   m_TagString: Untagged
@@ -979,19 +1148,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5424436897833163662
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4613902497260791711}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 18.089165, y: 1, z: 1}
-  m_Center: {x: 8.544582, y: 0, z: 0}
 --- !u!1 &4769637057306320191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,6 +1160,7 @@ GameObject:
   - component: {fileID: 709303024021971537}
   - component: {fileID: 7174697955922290808}
   - component: {fileID: 8314665077209566564}
+  - component: {fileID: 1434775875}
   m_Layer: 8
   m_Name: Grid_8
   m_TagString: Victory
@@ -1080,11 +1237,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4769637057306320191}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1434775875
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4769637057306320191}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5241845806294985571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,6 +1270,7 @@ GameObject:
   - component: {fileID: 8407230938383289565}
   - component: {fileID: 5544844796380473134}
   - component: {fileID: 3308510859263307962}
+  - component: {fileID: 2047566376}
   m_Layer: 8
   m_Name: Grid_16
   m_TagString: Victory
@@ -1173,11 +1347,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5241845806294985571}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2047566376
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241845806294985571}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6712993896503513635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,6 +1380,7 @@ GameObject:
   - component: {fileID: 6691330290089771110}
   - component: {fileID: 4723296890689458702}
   - component: {fileID: 6433393560462958914}
+  - component: {fileID: 1596469099}
   m_Layer: 8
   m_Name: Grid_3
   m_TagString: Victory
@@ -1266,11 +1457,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6712993896503513635}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1596469099
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6712993896503513635}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7270471736667375039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1490,7 @@ GameObject:
   - component: {fileID: 5411083386224609708}
   - component: {fileID: 8132954762329084136}
   - component: {fileID: 5277263687097752984}
+  - component: {fileID: 1966943822}
   m_Layer: 8
   m_Name: Grid_6
   m_TagString: Victory
@@ -1359,11 +1567,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7270471736667375039}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1966943822
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270471736667375039}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7631237159026288473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,6 +1600,7 @@ GameObject:
   - component: {fileID: 7448087818197808211}
   - component: {fileID: 3571535018745030222}
   - component: {fileID: 7202734584867692246}
+  - component: {fileID: 471949359}
   m_Layer: 8
   m_Name: Grid_1
   m_TagString: Victory
@@ -1452,11 +1677,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7631237159026288473}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &471949359
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7631237159026288473}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7680324847390713879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,6 +1710,7 @@ GameObject:
   - component: {fileID: 5645799861649830053}
   - component: {fileID: 2868539260679690292}
   - component: {fileID: 3774903891778420417}
+  - component: {fileID: 115274072}
   m_Layer: 8
   m_Name: Grid_18
   m_TagString: Victory
@@ -1545,11 +1787,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7680324847390713879}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &115274072
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7680324847390713879}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7843112079066324453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,6 +1820,7 @@ GameObject:
   - component: {fileID: 403054466735731682}
   - component: {fileID: 8035870164843897673}
   - component: {fileID: 3034510787971147935}
+  - component: {fileID: 1791366848}
   m_Layer: 8
   m_Name: Grid_17
   m_TagString: Victory
@@ -1638,11 +1897,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7843112079066324453}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1791366848
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7843112079066324453}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8560313936382668984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,6 +1930,7 @@ GameObject:
   - component: {fileID: 4303876686549859730}
   - component: {fileID: 2076859600601259591}
   - component: {fileID: 2452250943089035109}
+  - component: {fileID: 1880642042}
   m_Layer: 8
   m_Name: Grid_4
   m_TagString: Victory
@@ -1731,8 +2007,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8560313936382668984}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1880642042
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8560313936382668984}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

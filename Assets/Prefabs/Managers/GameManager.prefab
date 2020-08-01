@@ -43,3 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b33a63cdb6183514485742c99a465938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseScreen: {fileID: 0}
+  VictoryScreen: {fileID: 0}
+  player: {fileID: 532093767348529983, guid: d5257057b6f6dd24594ec33c4a307f0c, type: 3}

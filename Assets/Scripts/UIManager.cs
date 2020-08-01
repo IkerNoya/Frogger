@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
+    GameManager manager;
+    private void Start()
+    {
+        manager = GameManager.Get();
+    }
     public void ClickOnGame()
     {
         SceneManager.LoadScene("Game");
@@ -23,5 +28,9 @@ public class UIManager : MonoBehaviour
     public void ClickOnQuit()
     {
         Application.Quit();
+    }
+    public void ClickOnContinue()
+    {
+        manager.Restart();
     }
 }

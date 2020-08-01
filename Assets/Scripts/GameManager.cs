@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     public GameObject PauseScreen;
     public GameObject VictoryScreen;
+    public Player player;
     public static GameManager Get()
     {
         return instance;
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
     {
         
     }
-    void SetPause()
+    public void SetPause()
     {
         if (PauseScreen.activeSelf)
         {
@@ -50,7 +51,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void SetVictory()
+    public void SetVictory()
     {
         if (VictoryScreen.activeSelf)
         {
@@ -60,6 +61,12 @@ public class GameManager : MonoBehaviour
         {
             VictoryScreen.SetActive(true);
         }
+    }
+    public void Restart()
+    {
+        player.Respawn();
+        SetVictory();
+        player.SetIsPaused(false);
     }
     private void OnDisable()
     {

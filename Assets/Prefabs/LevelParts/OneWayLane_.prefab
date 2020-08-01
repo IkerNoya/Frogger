@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 849958308486567826}
   - component: {fileID: 1628979911964722682}
   - component: {fileID: 1035767156933473974}
+  - component: {fileID: 9215417394047466510}
   m_Layer: 0
   m_Name: Grid_3
   m_TagString: Untagged
@@ -93,6 +94,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &9215417394047466510
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738187400505853399}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1524167501094537931
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,6 +122,7 @@ GameObject:
   - component: {fileID: 6827521571210900901}
   - component: {fileID: 3784831427013459852}
   - component: {fileID: 2626819263696673424}
+  - component: {fileID: 597859381674122154}
   m_Layer: 0
   m_Name: Grid_8
   m_TagString: Untagged
@@ -186,6 +204,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &597859381674122154
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524167501094537931}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1661852479356366955
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6221353866313994998}
   m_Layer: 0
-  m_Name: Dangerous_Row_1
+  m_Name: OneWayLane_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,6 +280,7 @@ GameObject:
   - component: {fileID: 2574847432007719721}
   - component: {fileID: 2010002984930996442}
   - component: {fileID: 8862513414649309006}
+  - component: {fileID: 1044542378835068402}
   m_Layer: 0
   m_Name: Grid_16
   m_TagString: Untagged
@@ -327,6 +362,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1044542378835068402
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2281371296475544727}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2439703936887498572
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +390,7 @@ GameObject:
   - component: {fileID: 7831118657232349798}
   - component: {fileID: 5459969322943613363}
   - component: {fileID: 8439724652700848273}
+  - component: {fileID: 7261652648413614908}
   m_Layer: 0
   m_Name: Grid_4
   m_TagString: Untagged
@@ -420,6 +472,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7261652648413614908
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439703936887498572}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3743105231244005963
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,6 +500,7 @@ GameObject:
   - component: {fileID: 2022061591868513880}
   - component: {fileID: 2867041037997917980}
   - component: {fileID: 2173922206690609772}
+  - component: {fileID: 8358993667193524220}
   m_Layer: 0
   m_Name: Grid_6
   m_TagString: Untagged
@@ -513,6 +582,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8358993667193524220
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3743105231244005963}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4309836025078073873
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +610,7 @@ GameObject:
   - component: {fileID: 5944793292629468182}
   - component: {fileID: 4076580855798641853}
   - component: {fileID: 9010425899064721259}
+  - component: {fileID: 7087476802499745166}
   m_Layer: 0
   m_Name: Grid_17
   m_TagString: Untagged
@@ -606,6 +692,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7087476802499745166
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309836025078073873}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4432165627904622563
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +720,7 @@ GameObject:
   - component: {fileID: 1823431088093095761}
   - component: {fileID: 8131478530911637440}
   - component: {fileID: 7166615623862462773}
+  - component: {fileID: 3997148575649242043}
   m_Layer: 0
   m_Name: Grid_18
   m_TagString: Untagged
@@ -699,6 +802,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3997148575649242043
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4432165627904622563}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4535212947829616813
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +830,7 @@ GameObject:
   - component: {fileID: 3479916432903316391}
   - component: {fileID: 7387994434040590778}
   - component: {fileID: 3810758967304554786}
+  - component: {fileID: 6458563599544457321}
   m_Layer: 0
   m_Name: Grid_1
   m_TagString: Untagged
@@ -792,6 +912,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6458563599544457321
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4535212947829616813}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5262340171626119599
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +940,7 @@ GameObject:
   - component: {fileID: 3055294176648609874}
   - component: {fileID: 6344569915905935578}
   - component: {fileID: 1874478465167488876}
+  - component: {fileID: 4248973576477799998}
   m_Layer: 0
   m_Name: Grid_2
   m_TagString: Untagged
@@ -885,6 +1022,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &4248973576477799998
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262340171626119599}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6026244148109613966
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +1050,7 @@ GameObject:
   - component: {fileID: 1349851274289836466}
   - component: {fileID: 8538675056733333604}
   - component: {fileID: 1735371153604059546}
+  - component: {fileID: 4866231317570736421}
   m_Layer: 0
   m_Name: Grid_15
   m_TagString: Untagged
@@ -978,6 +1132,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &4866231317570736421
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6026244148109613966}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6073740076415785764
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,6 +1160,7 @@ GameObject:
   - component: {fileID: 6729488456294593982}
   - component: {fileID: 5009545637797825668}
   - component: {fileID: 4601557079838168221}
+  - component: {fileID: 932042582605065551}
   m_Layer: 0
   m_Name: Grid_9
   m_TagString: Untagged
@@ -1071,6 +1242,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &932042582605065551
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073740076415785764}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7274864481078951121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1270,7 @@ GameObject:
   - component: {fileID: 1355312157791270675}
   - component: {fileID: 5518004915102549430}
   - component: {fileID: 4972429611969205482}
+  - component: {fileID: 4371649307585089653}
   m_Layer: 0
   m_Name: Grid_13
   m_TagString: Untagged
@@ -1164,6 +1352,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &4371649307585089653
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7274864481078951121}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7287769505670642905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1380,7 @@ GameObject:
   - component: {fileID: 6023022220995414406}
   - component: {fileID: 7385383514632778233}
   - component: {fileID: 771469820209492746}
+  - component: {fileID: 269519214577205978}
   m_Layer: 0
   m_Name: Grid_10
   m_TagString: Untagged
@@ -1257,6 +1462,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &269519214577205978
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7287769505670642905}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7328663908920395548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1490,7 @@ GameObject:
   - component: {fileID: 731100020666134322}
   - component: {fileID: 971217476962745638}
   - component: {fileID: 6159420547330379437}
+  - component: {fileID: 4837854078952756121}
   m_Layer: 0
   m_Name: Grid_11
   m_TagString: Untagged
@@ -1350,6 +1572,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &4837854078952756121
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328663908920395548}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8156807217770252842
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1600,7 @@ GameObject:
   - component: {fileID: 2795022126761349292}
   - component: {fileID: 7105125514442368695}
   - component: {fileID: 1398885098663672241}
+  - component: {fileID: 8378728681383831447}
   m_Layer: 0
   m_Name: Grid_12
   m_TagString: Untagged
@@ -1443,6 +1682,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8378728681383831447
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8156807217770252842}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8418479476409997647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,6 +1710,7 @@ GameObject:
   - component: {fileID: 2913821559087738355}
   - component: {fileID: 4319260687664226599}
   - component: {fileID: 7897786686233421637}
+  - component: {fileID: 5272720610098834845}
   m_Layer: 0
   m_Name: Grid_7
   m_TagString: Untagged
@@ -1536,6 +1792,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5272720610098834845
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8418479476409997647}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8759121204995588723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1820,7 @@ GameObject:
   - component: {fileID: 3431272247552588386}
   - component: {fileID: 4257034693915682237}
   - component: {fileID: 3811808385859093574}
+  - component: {fileID: 5796448302391714947}
   m_Layer: 0
   m_Name: Grid_14
   m_TagString: Untagged
@@ -1629,6 +1902,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5796448302391714947
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8759121204995588723}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9096166899804728042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1930,7 @@ GameObject:
   - component: {fileID: 1153168455561815772}
   - component: {fileID: 475280137224963565}
   - component: {fileID: 7918779336236173290}
+  - component: {fileID: 8979118054789298205}
   m_Layer: 0
   m_Name: Grid_5
   m_TagString: Untagged
@@ -1722,3 +2012,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8979118054789298205
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9096166899804728042}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
