@@ -81,6 +81,7 @@ public class Player : FrogController
     {
         transform.position = InitialPos;
         point.position = InitialPos;
+        lives--;
     }
     public void SetIsPaused(bool choice)
     {
