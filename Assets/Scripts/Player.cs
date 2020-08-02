@@ -28,6 +28,8 @@ public class Player : FrogController
     public static event Pause pause;
     public delegate void Victory();
     public static event Victory victory;
+    public delegate void GameOver();
+    public static event GameOver gameOver;
     float distance;
 
     Vector3 InitialPos;
@@ -39,7 +41,7 @@ public class Player : FrogController
     }
     void Update()
     {
-        if (isPaused || isDead)
+        if (Time.timeScale == 0 || isDead)
             return;
 
         distance = Vector3.Distance(transform.position, point.position);
@@ -68,6 +70,7 @@ public class Player : FrogController
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pause();
+            Time.timeScale = 0;
         }
         if (transform.position != point.position)
         {
@@ -82,9 +85,17 @@ public class Player : FrogController
     }
     void Respawn()
     {
-        transform.position = InitialPos;
-        point.position = InitialPos;
         lives--;
+        if (lives <= 0)
+        {
+            Restart();
+            gameOver();
+        }
+        else
+        {
+            transform.position = InitialPos;
+            point.position = InitialPos;
+        }
     }
     public void SetIsPaused(bool choice)
     {
@@ -127,6 +138,7 @@ public class Player : FrogController
         {
             victory();
             lives = maxLives;
+            Time.timeScale = 0;
         }
         if (collision.gameObject.CompareTag("Car"))
         {

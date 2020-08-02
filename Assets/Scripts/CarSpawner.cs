@@ -13,16 +13,9 @@ public class CarSpawner : MonoBehaviour
     float spawnTimer = 2;
     float timer = 2;
 
-    GameManager manager;
-    void Start()
-    {
-        manager = GameManager.Get();
-    }
     void Update()
     {
-        if (manager.PauseScreen.activeSelf || manager.VictoryScreen.activeSelf)
-            return;
-
+        
         timer += Time.deltaTime;
         if (timer >= spawnTimer)
         {

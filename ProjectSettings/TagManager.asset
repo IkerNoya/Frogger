@@ -9,6 +9,8 @@ TagManager:
   - Car
   - EndRoad
   - Water
+  - pause
+  - V_screen
   layers:
   - Default
   - TransparentFX
@@ -23,8 +25,8 @@ TagManager:
   - Car
   - EndRoad
   - Water
-  - 
-  - 
+  - Pause
+  - Victory
   - 
   - 
   - 

@@ -4,11 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
-    GameManager manager;
-    private void Start()
-    {
-        manager = GameManager.Get();
-    }
+    public GameManager manager;
+    public GameObject pScreen;
+    public GameObject vScreen;
     public void ClickOnGame()
     {
         SceneManager.LoadScene("Game");
@@ -31,10 +29,12 @@ public class UIManager : MonoBehaviour
     }
     public void ClickOnContinue()
     {
+        Time.timeScale = 1;
         manager.Restart();
     }
     public void ClickOnResume()
     {
-        manager.SetPause();
+        Time.timeScale = 1;
+        transform.parent.gameObject.SetActive(false);
     }
 }

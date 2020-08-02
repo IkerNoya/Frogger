@@ -1,33 +1,17 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.Dynamic;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.SocialPlatforms.GameCenter;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
-    private static GameManager instance;
     public GameObject PauseScreen;
     public GameObject VictoryScreen;
     public Player player;
     int score;
     int livesUsed;
     int gainAmmount = 150;
-    public static GameManager Get()
-    {
-        return instance;
-    }
-    void Awake()
-    {
-        if (instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +19,15 @@ public class GameManager : MonoBehaviour
         VictoryScreen.SetActive(false);
         Player.victory += SetVictory;
         Player.pause += SetPause;
+        Player.gameOver += EndGame;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (player != null && VictoryScreen !=null && PauseScreen !=null)
+            return;
+        FindReferences();
     }
     public void SetPause()
     {
@@ -55,7 +42,13 @@ public class GameManager : MonoBehaviour
             player.SetIsPaused(true);
         }
     }
-
+    void EndGame()
+    {
+        SceneManager.LoadScene("End");
+        player = null;
+        PauseScreen = null;
+        VictoryScreen = null;
+    }
     public void SetVictory()
     {
         if (VictoryScreen.activeSelf)
@@ -88,14 +81,39 @@ public class GameManager : MonoBehaviour
     {
         return score;
     }
+    IEnumerator FindPlayer()
+    {
+        yield return new WaitForSeconds(0.2f);
+        player = FindObjectOfType<Player>();
+        StopCoroutine(FindPlayer());
+        yield return null;
+    }
+    IEnumerator FindScreens()
+    {
+        yield return new WaitForSeconds(0.2f);
+        PauseScreen = GameObject.FindGameObjectWithTag("pause");
+        VictoryScreen = GameObject.FindGameObjectWithTag("V_screen");
+        StopCoroutine(FindScreens());
+        yield return null;
+    }
+    public void FindReferences()
+    {
+        StartCoroutine(FindPlayer());
+        StartCoroutine(FindScreens());
+    }
     public void Restart()
     {
         player.Restart();
         SetVictory();
         player.SetIsPaused(false);
     }
+    public void ResetGame()
+    {
+        score = 0;
+    }
     private void OnDisable()
     {
+        Player.gameOver -= EndGame;
         Player.pause -= SetPause;
         Player.victory -= SetVictory;
     }
