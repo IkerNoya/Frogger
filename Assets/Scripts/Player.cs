@@ -20,6 +20,9 @@ public class Player : FrogController
     float maxLives = 3;
     bool isPaused = false;
     bool isDead = false;
+    float maxX = 8;
+    float minX = -6;
+    float minZ = 1;
 
     public delegate void Pause();
     public static event Pause pause;
@@ -28,6 +31,7 @@ public class Player : FrogController
     float distance;
 
     Vector3 InitialPos;
+    Vector3 ClampMovement;
     void Start()
     {
         InitialPos = transform.position;
@@ -37,10 +41,11 @@ public class Player : FrogController
     {
         if (isPaused || isDead)
             return;
+
         distance = Vector3.Distance(transform.position, point.position);
         Idle();
         //testeo de movimiento
-        if (Input.GetKeyDown(KeyCode.D) && distance < minDistance)
+        if (Input.GetKeyDown(KeyCode.D) && point.position.x < maxX && distance < minDistance)
         {
             point.position += Vector3.right;
             Jump();
@@ -50,12 +55,12 @@ public class Player : FrogController
             point.position += Vector3.forward;
             Jump();
         }
-        if (Input.GetKeyDown(KeyCode.A) && distance < minDistance)
+        if (Input.GetKeyDown(KeyCode.A) && point.position.x > minX && distance < minDistance)
         {
             point.position += Vector3.left;
             Jump();
         }
-        if (Input.GetKeyDown(KeyCode.S) && distance < minDistance)
+        if (Input.GetKeyDown(KeyCode.S) && point.position.z > minZ && distance < minDistance)
         {
             point.position += Vector3.back;
             Jump();
@@ -114,6 +119,10 @@ public class Player : FrogController
             victory();
         }
         if (collision.gameObject.CompareTag("Car"))
+        {
+            Die();
+        }
+        if (collision.gameObject.CompareTag("Water"))
         {
             Die();
         }

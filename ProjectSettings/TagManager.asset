@@ -8,6 +8,7 @@ TagManager:
   - Guts
   - Car
   - EndRoad
+  - Water
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - Car
   - EndRoad
-  - 
+  - Water
   - 
   - 
   - 
