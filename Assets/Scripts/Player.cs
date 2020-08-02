@@ -1,10 +1,5 @@
-﻿using System;
+﻿
 using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using UnityEditor;
-using UnityEditor.Timeline;
-using UnityEditor.UI;
 using UnityEngine;
 
 public class Player : FrogController
