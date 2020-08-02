@@ -37,6 +37,9 @@ public class Car : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.CompareTag("EndRoad"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
