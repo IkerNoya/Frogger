@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4573679096153966432
+--- !u!1 &1452896197195441840
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 805041651767282180}
-  - component: {fileID: 773752157041997132}
+  - component: {fileID: 5269917147206624165}
+  - component: {fileID: 4271334424062630393}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: UI End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &805041651767282180
+--- !u!4 &5269917147206624165
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573679096153966432}
+  m_GameObject: {fileID: 1452896197195441840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6404301, y: -2.9040053, z: 14.944431}
+  m_LocalPosition: {x: 215, y: 121, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &773752157041997132
+--- !u!114 &4271334424062630393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573679096153966432}
+  m_GameObject: {fileID: 1452896197195441840}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b33a63cdb6183514485742c99a465938, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cfecbb605b4c9146ab558aa0eed3569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseScreen: {fileID: 1351759260964493675, guid: e08ee732b1ff67646b51b0dd67ae0e3b,
-    type: 3}
-  VictoryScreen: {fileID: 2253593174283451331, guid: 53c4a4357a30fb74698a704a36b36dd0,
-    type: 3}
-  player: {fileID: 532093767348529983, guid: d5257057b6f6dd24594ec33c4a307f0c, type: 3}

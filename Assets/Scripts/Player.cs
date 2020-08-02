@@ -16,8 +16,8 @@ public class Player : FrogController
 
     public Transform point;
     float minDistance = 0.01f;
-    float lives = 3;
-    float maxLives = 3;
+    int lives = 3;
+    int maxLives = 3;
     bool isPaused = false;
     bool isDead = false;
     float maxX = 8;
@@ -112,11 +112,21 @@ public class Player : FrogController
         isDead = true;
         StartCoroutine(DeadCoroutine());
     }
+
+    public int GetLives()
+    {
+        return lives;
+    }
+    public void SetLives(int value)
+    {
+        lives = value;
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Victory"))
         {
             victory();
+            lives = maxLives;
         }
         if (collision.gameObject.CompareTag("Car"))
         {

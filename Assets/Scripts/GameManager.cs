@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public GameObject PauseScreen;
     public GameObject VictoryScreen;
     public Player player;
+    int score;
+    int livesUsed;
+    int gainAmmount = 150;
     public static GameManager Get()
     {
         return instance;
@@ -63,8 +66,27 @@ public class GameManager : MonoBehaviour
         else
         {
             VictoryScreen.SetActive(true);
+            if (player.GetLives() == 3)
+            {
+                score += gainAmmount * 5;
+                livesUsed = 0;
+            }
+            else if (player.GetLives() == 2)
+            {
+                score += gainAmmount * 2;
+                livesUsed = 1;
+            }
+            else
+            {
+                score += gainAmmount;
+                livesUsed = 2; 
+            }
             player.SetIsPaused(true);
         }
+    }
+    public int GetScore()
+    {
+        return score;
     }
     public void Restart()
     {

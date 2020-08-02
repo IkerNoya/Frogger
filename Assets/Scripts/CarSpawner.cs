@@ -10,8 +10,8 @@ public class CarSpawner : MonoBehaviour
     public List<GameObject> cars = new List<GameObject>();
     public List<Transform> spawnPoints = new List<Transform>();
 
-    float spawnTimer = 3.0f;
-    float timer = 3.0f;
+    float spawnTimer = 2;
+    float timer = 2;
 
     GameManager manager;
     void Start()
@@ -28,6 +28,7 @@ public class CarSpawner : MonoBehaviour
         {
             Spawn();
             timer = 0;
+            spawnTimer = Random.Range(1.5f, 3);
         }
     }
     void Spawn()
