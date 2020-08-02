@@ -188,7 +188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36400002, y: 0.6871308}
   m_AnchorMax: {x: 0.36400002, y: 0.6871308}
-  m_AnchoredPosition: {x: -11.000015, y: -10.500015}
+  m_AnchoredPosition: {x: 92, y: -10.500015}
   m_SizeDelta: {x: 170.1, y: 60.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1351759260661715138
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -246,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1351759260964493676
 Transform:
   m_ObjectHideFlags: 0
@@ -295,7 +295,7 @@ RectTransform:
   m_Children:
   - {fileID: 1351759259918767459}
   m_Father: {fileID: 1351759261149874841}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.29556096}
   m_AnchorMax: {x: 0.5, y: 0.29556096}
@@ -424,7 +424,6 @@ RectTransform:
   m_Children:
   - {fileID: 1351759261194061267}
   - {fileID: 1351759260661715136}
-  - {fileID: 1351759261584219629}
   - {fileID: 1351759261421218056}
   - {fileID: 1351759261056874177}
   m_Father: {fileID: 1351759260964493676}
@@ -553,7 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -604,7 +603,7 @@ RectTransform:
   m_Children:
   - {fileID: 1351759259762037457}
   m_Father: {fileID: 1351759261149874841}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.48444787}
   m_AnchorMax: {x: 0.5, y: 0.48444787}
@@ -701,83 +700,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &1351759261584219628
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1351759261584219629}
-  - component: {fileID: 1351759261584219631}
-  - component: {fileID: 1351759261584219630}
-  m_Layer: 0
-  m_Name: Lives
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1351759261584219629
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351759261584219628}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1351759261149874841}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.66300005, y: 0.6871308}
-  m_AnchorMax: {x: 0.66300005, y: 0.6871308}
-  m_AnchoredPosition: {x: 48, y: -10.500015}
-  m_SizeDelta: {x: 293.8, y: 60.3}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1351759261584219631
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351759261584219628}
-  m_CullTransparentMesh: 0
---- !u!114 &1351759261584219630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351759261584219628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'LIVES USED:'
 --- !u!1001 &1351759261382891505
 PrefabInstance:
   m_ObjectHideFlags: 0

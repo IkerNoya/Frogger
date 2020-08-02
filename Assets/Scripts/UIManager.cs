@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public GameManager manager;
-    public GameObject pScreen;
-    public GameObject vScreen;
+    public GameObject gScreen;
     public void ClickOnGame()
     {
         SceneManager.LoadScene("Game");
@@ -36,5 +35,6 @@ public class UIManager : MonoBehaviour
     {
         Time.timeScale = 1;
         transform.parent.gameObject.SetActive(false);
+        gScreen.SetActive(true);
     }
 }

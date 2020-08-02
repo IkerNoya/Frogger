@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Dynamic;
 using UnityEngine;
 
 public class GameData : MonoBehaviour
@@ -8,7 +9,6 @@ public class GameData : MonoBehaviour
     public static GameData instance;
     public GameManager gameManager;
     int score;
-    int gameTime;
     public static GameData Get()
     {
         return instance;
@@ -23,9 +23,13 @@ public class GameData : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    private void Update()
+
+    public int GetScore()
     {
-        score = gameManager.GetScore();
-        //gameTime = gameTime.GetTime();
+        return score;
+    }
+    public void SetScore(int value)
+    {
+        score = value;
     }
 }

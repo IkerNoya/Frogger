@@ -4,10 +4,12 @@ using UnityEngine.UI;
 public class UIEnd : MonoBehaviour
 {
     public Text score;
+    GameData data;
     int scoreN;
-    string centerText = "                     ";
+    string centerText = "                       ";
     private void Start()
     {
-        score.text += "\n" + centerText + scoreN;
+        data = GameData.Get();
+        score.text += "\n" + centerText + data.GetScore();
     }
 }

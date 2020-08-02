@@ -1,20 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
 {
+    GameData data;
+
     public GameObject PauseScreen;
     public GameObject VictoryScreen;
+    public GameObject GameScreen;
     public Player player;
     int score;
-    int livesUsed;
+    float timer;
     int gainAmmount = 150;
 
-    // Start is called before the first frame update
     void Start()
     {
+        data = GameData.Get();
         PauseScreen.SetActive(false);
         VictoryScreen.SetActive(false);
         Player.victory += SetVictory;
@@ -22,32 +26,29 @@ public class GameManager : MonoBehaviour
         Player.gameOver += EndGame;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (player != null && VictoryScreen !=null && PauseScreen !=null)
-            return;
-        FindReferences();
+        timer += Time.deltaTime;
     }
     public void SetPause()
     {
         if (PauseScreen.activeSelf)
         {
+            GameScreen.SetActive(true);
             PauseScreen.SetActive(false);
             player.SetIsPaused(false);
         }
         else
         {
+            GameScreen.SetActive(false);
             PauseScreen.SetActive(true);
             player.SetIsPaused(true);
         }
     }
     void EndGame()
     {
+        data.SetScore(score);
         SceneManager.LoadScene("End");
-        player = null;
-        PauseScreen = null;
-        VictoryScreen = null;
     }
     public void SetVictory()
     {
@@ -55,55 +56,43 @@ public class GameManager : MonoBehaviour
         {
             VictoryScreen.SetActive(false);
             player.SetIsPaused(false);
+            GameScreen.SetActive(true);
         }
         else
         {
             VictoryScreen.SetActive(true);
+            GameScreen.SetActive(false);
             if (player.GetLives() == 3)
             {
                 score += gainAmmount * 5;
-                livesUsed = 0;
             }
             else if (player.GetLives() == 2)
             {
                 score += gainAmmount * 2;
-                livesUsed = 1;
             }
             else
             {
                 score += gainAmmount;
-                livesUsed = 2; 
             }
             player.SetIsPaused(true);
         }
+    }
+    public float GetTimer()
+    {
+        return timer;
+    }
+    public void ResetTimer()
+    {
+        timer = 0;
     }
     public int GetScore()
     {
         return score;
     }
-    IEnumerator FindPlayer()
-    {
-        yield return new WaitForSeconds(0.2f);
-        player = FindObjectOfType<Player>();
-        StopCoroutine(FindPlayer());
-        yield return null;
-    }
-    IEnumerator FindScreens()
-    {
-        yield return new WaitForSeconds(0.2f);
-        PauseScreen = GameObject.FindGameObjectWithTag("pause");
-        VictoryScreen = GameObject.FindGameObjectWithTag("V_screen");
-        StopCoroutine(FindScreens());
-        yield return null;
-    }
-    public void FindReferences()
-    {
-        StartCoroutine(FindPlayer());
-        StartCoroutine(FindScreens());
-    }
     public void Restart()
     {
         player.Restart();
+        ResetTimer();
         SetVictory();
         player.SetIsPaused(false);
     }
