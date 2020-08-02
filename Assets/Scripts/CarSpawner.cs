@@ -6,12 +6,23 @@ using UnityEngine;
 public class CarSpawner : MonoBehaviour
 {
     [SerializeField] float carAngle;
+
     public List<GameObject> cars = new List<GameObject>();
     public List<Transform> spawnPoints = new List<Transform>();
+
     float spawnTimer = 3.0f;
     float timer = 3.0f;
+
+    GameManager manager;
+    void Start()
+    {
+        manager = GameManager.Get();
+    }
     void Update()
     {
+        if (manager.PauseScreen.activeSelf || manager.VictoryScreen.activeSelf)
+            return;
+
         timer += Time.deltaTime;
         if (timer >= spawnTimer)
         {

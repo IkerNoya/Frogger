@@ -8,14 +8,20 @@ public class Car : MonoBehaviour
     [SerializeField] float minSpeed;
     [SerializeField] float maxSpeed;
 
+    GameManager manager;
+
     float speed;
     bool destination = false;
     void Start()
     {
+        manager = GameManager.Get();
         speed = Random.Range(minSpeed, maxSpeed);
     }
     private void Update()
     {
+        if (manager.PauseScreen.activeSelf)
+            return;
+
         Vector3 movement = transform.forward * speed;
         transform.position += movement * Time.deltaTime;
     }
