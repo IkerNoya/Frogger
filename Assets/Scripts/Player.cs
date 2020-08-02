@@ -12,6 +12,7 @@ public class Player : FrogController
     [SerializeField] float speed;
     [SerializeField] GameObject Body;
     [SerializeField] GameObject Blood;
+    Rigidbody rb;
 
     public Transform point;
     float minDistance = 0.01f;
@@ -30,6 +31,7 @@ public class Player : FrogController
     void Start()
     {
         InitialPos = transform.position;
+        rb = GetComponent<Rigidbody>();
     }
     void Update()
     {
@@ -66,10 +68,6 @@ public class Player : FrogController
         {
             transform.position = Vector3.Lerp(transform.position, point.position, Time.deltaTime * speed);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Die();
-        }
     }
     public void Restart()
     {
@@ -95,7 +93,9 @@ public class Player : FrogController
     {
         Body.SetActive(false);
         Blood.SetActive(true);
+        rb.isKinematic = true;
         yield return new WaitForSeconds(3.0f);
+        rb.isKinematic = false;
         Body.SetActive(true);
         Blood.SetActive(false);
         isDead = false;
@@ -112,6 +112,10 @@ public class Player : FrogController
         if (collision.gameObject.CompareTag("Victory"))
         {
             victory();
+        }
+        if (collision.gameObject.CompareTag("Car"))
+        {
+            Die();
         }
     }
 }

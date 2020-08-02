@@ -9,8 +9,8 @@ public class CustomCamera : MonoBehaviour
     public float offset;
     public float speed;
     Vector3 newPosition;
-    float leftScreenLimit = -2.5f;
-    float rightScreenLimit = 4.5f;
+    float leftScreenLimit = -3.5f;
+    float rightScreenLimit = 5.5f;
     void Update()
     {
         Vector3 xOffset = player.position;
