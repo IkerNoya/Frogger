@@ -393,8 +393,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.54888445}
   m_AnchorMax: {x: 0.5, y: 0.54888445}
-  m_AnchoredPosition: {x: -2.1, y: 3}
-  m_SizeDelta: {x: 280.3, y: 83.5}
+  m_AnchoredPosition: {x: 18, y: -22.7}
+  m_SizeDelta: {x: 543.9, y: 223.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &870433754
 MonoBehaviour:
@@ -427,9 +427,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SAMPLE TEXT FOR CREDITS
-
-'
+  m_Text: "                       Asset Store:\nUAA - City Props - Vehicles\r by
+    TestMobile\n\rToxic Frogs by Ryo Arai\n\n                      Programmer:\nIker
+    Noya\n\n\n"
 --- !u!222 &870433755
 CanvasRenderer:
   m_ObjectHideFlags: 0
