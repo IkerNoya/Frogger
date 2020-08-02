@@ -46,23 +46,22 @@ public class Player : FrogController
 
         distance = Vector3.Distance(transform.position, point.position);
         Idle();
-        //testeo de movimiento
-        if (Input.GetKeyDown(KeyCode.D) && point.position.x < maxX && distance < minDistance)
+        if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && point.position.x < maxX && distance < minDistance)
         {
             point.position += Vector3.right;
             Jump();
         }
-        if (Input.GetKeyDown(KeyCode.W) && distance < minDistance)
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && distance < minDistance)
         {
             point.position += Vector3.forward;
             Jump();
         }
-        if (Input.GetKeyDown(KeyCode.A) && point.position.x > minX && distance < minDistance)
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && point.position.x > minX && distance < minDistance)
         {
             point.position += Vector3.left;
             Jump();
         }
-        if (Input.GetKeyDown(KeyCode.S) && point.position.z > minZ && distance < minDistance)
+        if ((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) && point.position.z > minZ && distance < minDistance)
         {
             point.position += Vector3.back;
             Jump();
