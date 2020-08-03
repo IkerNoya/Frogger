@@ -37,11 +37,15 @@ public class Car : MonoBehaviour
     {
         destination = value;
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("EndRoad"))
+        if (other.gameObject.CompareTag("EndRoad"))
         {
             Destroy(gameObject);
+        }
+        if (other.gameObject.CompareTag("Car"))
+        {
+            speed = other.gameObject.GetComponent<Car>().GetSpeed();
         }
     }
 }

@@ -134,11 +134,14 @@ public class Player : FrogController
             lives = maxLives;
             Time.timeScale = 0;
         }
-        if (collision.gameObject.CompareTag("Car"))
+        if (collision.gameObject.CompareTag("Water"))
         {
             Die();
         }
-        if (collision.gameObject.CompareTag("Water"))
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Car") && !isDead)
         {
             Die();
         }
