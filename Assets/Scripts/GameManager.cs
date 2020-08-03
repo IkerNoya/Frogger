@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     GameData data;
+    public List<GameObject> levels = new List<GameObject>(); 
 
     public GameObject PauseScreen;
     public GameObject VictoryScreen;
@@ -15,6 +18,7 @@ public class GameManager : MonoBehaviour
     int score;
     float timer;
     int gainAmmount = 150;
+    int currentLevel = 0;
 
     void Start()
     {
@@ -24,6 +28,7 @@ public class GameManager : MonoBehaviour
         Player.victory += SetVictory;
         Player.pause += SetPause;
         Player.gameOver += EndGame;
+        UIManager.changeLevel += ChangeLevel;
     }
 
     void Update()
@@ -89,6 +94,17 @@ public class GameManager : MonoBehaviour
     {
         return score;
     }
+    void ChangeLevel()
+    {
+        levels[currentLevel].SetActive(false);
+        currentLevel++;
+        if (currentLevel >= levels.Count)
+        {
+            currentLevel = 0;
+        }
+        levels[currentLevel].SetActive(true);
+
+    }
     public void Restart()
     {
         player.Restart();
@@ -105,5 +121,6 @@ public class GameManager : MonoBehaviour
         Player.gameOver -= EndGame;
         Player.pause -= SetPause;
         Player.victory -= SetVictory;
+        UIManager.changeLevel -= ChangeLevel;
     }
 }

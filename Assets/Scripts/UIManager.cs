@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,6 +7,8 @@ public class UIManager : MonoBehaviour
 {
     public GameManager manager;
     public GameObject gScreen;
+    public delegate void NewLevel();
+    public static event NewLevel changeLevel;
     public void ClickOnGame()
     {
         SceneManager.LoadScene("Game");
@@ -30,6 +33,7 @@ public class UIManager : MonoBehaviour
     {
         Time.timeScale = 1;
         manager.Restart();
+        changeLevel();
     }
     public void ClickOnResume()
     {
