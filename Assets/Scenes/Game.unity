@@ -937,7 +937,7 @@ PrefabInstance:
     - target: {fileID: 2178096865908215774, guid: 0e56379ebd4ba4747af3e9ed88ed2c6e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2890221517915268424, guid: 0e56379ebd4ba4747af3e9ed88ed2c6e,
         type: 3}
@@ -1271,11 +1271,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Level_3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2178096865908215774, guid: 592b15cd65adeeb48acfa50979e2c8a0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2890221517915268424, guid: 592b15cd65adeeb48acfa50979e2c8a0,
         type: 3}
@@ -1947,6 +1942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5020236379238793189, guid: f583d2e8704cf7b4daea6c4a9c71e96a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5020236379238793190, guid: f583d2e8704cf7b4daea6c4a9c71e96a,
         type: 3}
